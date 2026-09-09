@@ -21,7 +21,7 @@ My Setup:
 * **Distance rings from 1m to 6m:** Increments to help the user see exactly how close the target is.
 * **120° angle display:** The same angle as the real radar, to maximize the display on the screen.
 * **Up to 3 detected targets:** Do I even need to explain this?
-* **Bluetooth and Wifi:** It scans for Bluetooth, then Wifi. It will keep the second one as a fallback/failsafe. (Intended process. Might be wrong. I didn't check.)
+* **Bluetooth and Wifi:** It scans for Bluetooth, then Wifi. It will keep the second one as a fallback/failsafe.
 * **Offline screen when no connection:** Displays an "Offline.png" to show you that it, in fact, can not connect.
 
 ## 🧾 Requirements
@@ -29,7 +29,7 @@ HARDWARE
 - Radar: HLK-LD2450
 - Microchip: ESP32-WROOM-32U
 - LD2450 antenna (Recommended)
-- ESP32 antenna (I haven't tested)
+- ESP32 antenna (Highly recommended)
 - Power and wiring
 
 SOFTWARE
