@@ -43,6 +43,25 @@ SOFTWARE
 
 NOTE: The ESP32 code was tested specifically on an ESP32-WROOM-32U. Other ESP32 boards may require changes to the UART pins or configuration.
 
+## ⚠️ Version Requirement
+As of v1.1.0 "Stable", a ***separate*** file named ***SENSITIVE.py*** must be added manually.
+This file is intentionally excluded from the repository because it contains private information.
+
+## 📄 SENSITIVE.py
+Create a file named ***SENSITIVE.py*** and place it in the same folder as your **main.py** (The radar main.py).
+Use this format:
+
+ESP32_ADDRESS = ""
+IMAGE_PATH = ""
+WIFI_SSID = ""
+WIFI_PASSWORD = ""
+
+Add your info in between the quotation marks. Yes, keep the quotation marks.
+
+## 🔄 How To Rename SENSITIVE.py?
+If you rename ***SENSITIVE.py***, make sure to change the import line in both of the **main.py** files (radar and esp32 folder).
+For example, ***from SENSITIVE import ESP32_ADDRESS*** may become ***from Passwords import ESP_ADDRESS***
+
 ## 🔧 Setup
 - [ ] Flash ESP32 and install MicroPython 1.29.0 on the ESP32.
 - [ ] Connect the LD2450 to the ESP32. The current version is: LD2450 RX → ESP32 GPIO 17, LD2450 TX → ESP32 GPIO 16, Baud rate → 256000, and GND → GND. (I am not an electrical engineer I am not liable if I am wrong.)
