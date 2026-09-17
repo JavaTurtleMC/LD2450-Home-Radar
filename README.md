@@ -1,5 +1,5 @@
 # LD2450 Home Radar
-<img src="https://img.shields.io/badge/License-MIT-white?style=flat&logo=github" alt="Badge"> <img src="https://img.shields.io/badge/Operating%20System%20Tested-Windows%20%2F%20Linux-blue?style=flat&logo=github" alt="Badge">
+<img src="https://img.shields.io/badge/License-MIT-white?style=flat&logo=github" alt="Badge"> <img src="https://img.shields.io/badge/Operating%20System%20Tested-Windows_11%20%2F%20Linux-blue?style=flat&logo=github" alt="Badge">
 
 Real-time target tracking radar module within a specific area (usually up to 6 meters and 120 degrees range). Measurement of a target's distance, angle, and speed.
 > [!TIP]
