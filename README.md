@@ -115,7 +115,7 @@ Now, you can just continue as normal:
 The ESP32 continuously reads LD2450 target frames, extracts the target coordinates, and sends them to the desktop application using BLE notifications.
 The desktop application converts those coordinates into positions on the radar display.
 
-[! WARNING]
+> [! WARNING]
 > Use at your own risk. I am not a professional, and I do this for a hobby.
 > This is my first repo, there are many things I can change. Please do let me know what I can fix.
 
