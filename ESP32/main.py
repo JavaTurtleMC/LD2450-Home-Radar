@@ -3,14 +3,12 @@ import time
 import bluetooth
 import machine
 import math
+from SENSITIVE import WIFI_PASSWORD, WIFI_SSID
 
 ###################################
 #             WARNING             #
 #   THIS PART CONTAINS WIFI PASS  #
 ###################################
-
-WIFI_SSID = "enter your wifi name here"
-WIFI_PASSWORD = "wifi password goes here"
 
 wifi_connected = False
 wifi_rssi = None
