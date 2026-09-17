@@ -58,6 +58,9 @@ WIFI_PASSWORD = ""
 
 Add your info in between the quotation marks. Yes, keep the quotation marks.
 
+## ⚠️ Private Information
+***SENSITIVE.py*** contains your private information. Do not upload that file.
+
 ## 🔄 How To Rename SENSITIVE.py?
 If you rename ***SENSITIVE.py***, make sure to change the import line in both of the **main.py** files (radar and esp32 folder).
 For example, ***from SENSITIVE import ESP32_ADDRESS*** may become ***from Passwords import ESP_ADDRESS***
