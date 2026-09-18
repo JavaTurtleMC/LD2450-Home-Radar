@@ -92,7 +92,7 @@ This file is intentionally excluded from the repository because it contains priv
 - [ ] Flash ESP32 and install MicroPython 1.29.0 on the ESP32.
 - [ ] Connect the LD2450 to the ESP32. The current version is: LD2450 RX → ESP32 GPIO 17, LD2450 TX → ESP32 GPIO 16, Baud rate → 256000, and GND → GND. (I am not an electrical engineer I do not know much about electricity, please be careful.)
 
-The next step is split into 2. For users on `v1.0.0`, follow this:
+The next step is split into two instructions, depending on your version. For users on `v1.0.0`, follow this:
 - [ ] Open ESP32/main.py (There are 2 main.py. Use the one that is nested under ESP32) and enter your wifi credentials. This is private wifi so don't share it.
 
 For users who cloned my repository, you are most likely using a newer build such as `v1.1.0 "Stable"` or higher. Use this instead:
