@@ -96,7 +96,7 @@ The next step is split into 2. For users on `v1.0.0`, follow this:
 - [ ] Open ESP32/main.py (There are 2 main.py. Use the one that is nested under ESP32) and enter your wifi credentials. This is private wifi so don't share it.
 
 For users who cloned my repository, you are most likely using a newer build such as `v1.1.0 "Stable"` or higher. Use this instead:
-- [] Create `SENSITIVE.py` and insert your credentials there. Do not share your private information online.
+- [ ] Create `SENSITIVE.py` and insert your credentials there. Do not share your private information online.
 
 Now, you can just continue as normal:
 - [ ] Install bleak and Pyside6 with "pip install bleak PySide6".
