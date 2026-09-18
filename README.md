@@ -93,16 +93,14 @@ This file is intentionally excluded from the repository because it contains priv
 - [ ] Connect the LD2450 to the ESP32. The current version is: LD2450 RX → ESP32 GPIO 17, LD2450 TX → ESP32 GPIO 16, Baud rate → 256000, and GND → GND. (I am not an electrical engineer I do not know much about electricity, please be careful.)
 
 The next step is split into two instructions, depending on your version. For users on `v1.0.0`, follow this:
-- [ ] Open ESP32/main.py (There are 2 main.py. Use the one that is nested under ESP32) and enter your wifi credentials. This is private wifi so don't share it.
+- [ ] Open `ESP32/main.py` (There are 2 main.py. Use the one that is nested under ESP32) and enter your wifi credentials. This is private wifi so don't share it.
 
 For users who cloned my repository, you are most likely using a newer build such as `v1.1.0 "Stable"` or higher. Use this instead:
 - [ ] Create `SENSITIVE.py` and insert your credentials there. Do not share your private information online.
 
 Now, you can just continue as normal:
 - [ ] Install bleak and Pyside6 with "pip install bleak PySide6".
-- [ ] Run python main.py (The normal one. The one that's literally 900 ish lines idk. Give or take.)
-- [ ] Oh right also change the image at "image = QPixmap" and shove in your image location. The file is main.py (The larger one).
-- [ ] Oh also same big main.py file, you gotta add your ESP32 address. I forgot how to figure that out so good luck. Just google how to find it or something.
+- [ ] Run python main.py (The larger one that is ***NOT*** nested.)
 
 > [!NOTE]
 > To use the radar, just run the `main.py` that is ***NOT*** nested. This is the file that is much longer than the other one.
