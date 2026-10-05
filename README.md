@@ -26,7 +26,7 @@ Radar Features:
 
 ## Features
 * **Real-time target tracking:** Tracks up to 3 entities at once.
-* **Custom PySide6 radar interface:** The design of the radar is based on [this video](https://www.youtube.com/watch?v=6afM9WfYh6I&list=WL&index=6)
+* **Custom PySide6 radar interface:** The design of the radar is inspired by [this video](https://www.youtube.com/watch?v=6afM9WfYh6I&list=WL&index=6)
 * **Distance rings from 1m to 6m:** Increments to help the user see exactly how close the target is.
 * **120° angle display:** The same angle as the real radar, to maximize the display on the screen.
 * **Up to 3 detected targets:** Do I even need to explain this?
