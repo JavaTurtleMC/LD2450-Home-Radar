@@ -232,6 +232,8 @@ class MainWindow(QWidget):
         self.booting = True
         self.connection_status = "CONNECTING VIA WIFI..."
 
+        self.shutdown_signal = False
+
         self.signal_strength = None
         self.signal_type = "Bluetooth"
 
@@ -281,6 +283,10 @@ class MainWindow(QWidget):
 
        
     def closeEvent(self, event):
+        self.shutdown_signal = True
+        print("SHUTDOWN SIGNAL TRIGGERED")
+        self.repaint()
+
         self.bluetooth_worker.stop()
 
         if self.bluetooth_worker.isRunning():
@@ -547,6 +553,31 @@ class MainWindow(QWidget):
     def paintEvent(self, event):
         
         painter = QPainter(self)
+
+        if self.shutdown_signal == True:
+            painter.setPen(QColor("#a6e3a1"))
+            painter.setBrush(Qt.BrushStyle.NoBrush)
+
+            painter.drawRect(
+                (self.width() - 500) // 2,
+                (self.height() - 150) // 2,
+                500,
+                150
+            )
+
+            painter.setPen(QColor("#a6e3a1"))
+            painter.setFont(QFont("JetBrainsMono Nerd Font", 25))
+
+            painter.drawText(
+                0,
+                0,
+                self.width(),
+                self.height(),
+                Qt.AlignmentFlag.AlignCenter,
+                "DISCONNECTING..."
+            )
+
+            return
 
         self.frame_count += 1
         now = time.monotonic()

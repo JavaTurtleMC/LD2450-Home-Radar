@@ -5,10 +5,7 @@ import machine
 import math
 from SENSITIVE import WIFI_PASSWORD, WIFI_SSID
 
-###################################
-#             WARNING             #
-#   THIS PART CONTAINS WIFI PASS  #
-###################################
+# Wifi password has been moved to SENSITIVE.py
 
 wifi_connected = False
 wifi_rssi = None
